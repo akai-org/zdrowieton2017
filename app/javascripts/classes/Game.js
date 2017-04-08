@@ -14,6 +14,11 @@ app.Game = class {
     this.max_fat = 500;
     this.max_carbohydrates = 500;
 
+    document.getElementsByClassName("valueKcal")[0].innerHTML = this.max_kcal.toString();
+    document.getElementsByClassName("valueProtein")[0].innerHTML = this.max_protein.toString();
+    document.getElementsByClassName("valueFat")[0].innerHTML = this.max_fat.toString();
+    document.getElementsByClassName("Carbo")[0].innerHTML = this.max_carbohydrates.toString();
+
     this.actual_kcal = 0;
     this.actual_protein = 0;
     this.actual_fat = 0;
