@@ -32,4 +32,17 @@ app.Shop = class {
   checkout() {
     // put the products into the fridge
   }
+
+  draw(container) {
+    let well = container.getElementsByClassName("well")[0];
+    products.forEach(function(product) {
+      let div = document.createElement("div");
+      div.className = "item";
+      app.products[product].draw(div);
+      div.addEventListener("click", function() {
+        console.log("An item has been clicked!", app.products[product]);
+      });
+      well.appendChild(div);
+    });
+  }
 };
