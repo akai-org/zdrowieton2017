@@ -57,7 +57,7 @@ gulp.task('json', function() {
 
 gulp.task('images', function() {
   return gulp.src("app/images/*")
-    .pipe(gulp.dest("public/img/"));
+    .pipe(gulp.dest("public/images/"));
 });
 
 gulp.task('default', ['serve']);
