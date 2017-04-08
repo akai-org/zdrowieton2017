@@ -9,7 +9,7 @@
       "serving": "100g",
       "icon": "carrot.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2901?fg=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=carrot&ds=&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "Czy wiesz że marchewka zawiera 88% wody?",
+      "hint": "Marchew to głównie węglowodany.",
       "process": {
         "cook": "cooked-carrot"
       }
@@ -35,7 +35,7 @@
       "serving": "100g",
       "icon": "potatoe.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/3080?manu=&fgcd=&ds=",
-      "hint": "Czy wiesz że 100g ziemniaków ma mniej niż 1g cukrów?",
+      "hint": "Pyra to po poznańsku ziemniak",
       "process": {
         "cook": "cooked-potato",
         "fry": "fried-potato"
@@ -74,7 +74,7 @@
       "serving": "100g",
       "icon": "orange.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2288?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=orange&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Pomarańcza to dużo węglowodanów.",
       "process": {}
     },
     "strawberry": {
@@ -86,7 +86,7 @@
       "serving": "100g",
       "icon": "strawberry.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2385?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=strawberry&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Truskawka to taki czerwony owoc ;) Generalnie węglowodany",
       "process": {}
     },
     "tomato": {
@@ -98,7 +98,7 @@
       "serving": "100g",
       "icon": "tomato.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/3223?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=tomato&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Z pomidora jest dobra zupa.",
       "process": {}
     },
     "beer": {
@@ -110,7 +110,7 @@
       "serving": "354g",
       "icon": "beer.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/4126?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=beer&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Od piwa rośnie brozuszek.",
       "process": {}
     },
     "donut": {
@@ -122,7 +122,7 @@
       "serving": "45g",
       "icon": "donut.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/5756?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=donut&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Pączki jakie są, każdy wie.",
       "process": {}
     },
     "apple": {
@@ -134,7 +134,7 @@
       "serving": "68g",
       "icon": "apple.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2122?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=apple&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Jeże lubią jabłka",
       "process": {}
     },
     "cheese": {
@@ -146,7 +146,7 @@
       "serving": "28.35g",
       "icon": "cheese.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/22?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=cheese&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Ser jest dobry na kanapkę.",
       "process": {}
     },
     "cupcake": {
@@ -158,7 +158,7 @@
       "serving": "100g",
       "icon": "cupcake.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/19274?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=cupcake&ds=&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Słodka babeczka z wiśnią.",
       "process": {}
     },
     "sandwich": {
@@ -170,7 +170,7 @@
       "serving": "63g",
       "icon": "sandwich.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/19274?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=cupcake&ds=&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Kanapka jest dośc zbilansowana.",
       "process": {}
     },
     "turkey": {
@@ -182,7 +182,7 @@
       "serving": "114g",
       "icon": "turkey.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/1038?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=turkey&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Indyk to drób. Generalnie dużo białka i trochę tłuszczu",
       "process": {
         "cook": "cooked-turkey",
         "fry": "fried-turkey"
@@ -221,7 +221,7 @@
       "serving": "608g",
       "icon": "broccoli.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/1038?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=turkey&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Brokuł ma trochę białka.",
       "process": {
         "cook": "cooked-broccoli"
       }
@@ -247,7 +247,7 @@
       "serving": "165g",
       "icon": "pineapple.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2340?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=pineapple&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Ananas jest słodki, dużo węglowodanów",
       "process": {}
     },
     "coke": {
