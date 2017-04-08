@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,900&subset=latin-ext');
-
 $light: #ffebdb;
 $dark: #7a7774;
 $kcal: #81cfff;
@@ -7,14 +5,8 @@ $protein: #98da4e;
 $fat: #ff564d;
 $carbo: #ffa63a;
 
-body,html {
-  margin:0;
-  font-family: 'Lato', sans-serif;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&subset=latin-ext');
+@import 'general';
 @import 'needs';
 @import 'fridge';
-
-.hidden {
-  display: none;
-}
+@import 'shop';
