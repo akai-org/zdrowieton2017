@@ -24,7 +24,7 @@ app.Product = class {
 
   draw(div) {
     let img = document.createElement("img");
-    img.src = this.icon;
+    img.src = 'img/icons/'+this.icon;
     img.alt = this.displayName;
     div.appendChild(img);
   }
