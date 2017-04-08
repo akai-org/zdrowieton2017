@@ -19,7 +19,31 @@ app.Fridge = class {
   }
 
   eatProduct(productName) {
-    console.log("om nom nom");
+    console.log(app.game.actual_kcal, app.products[productName].kcal,
+      app.game.actual_kcal + app.products[productName].kcal,
+    app.game.max_kcal);
+
+    if(
+      (app.game.actual_kcal + app.products[productName].kcal > app.game.max_kcal)
+      || (app.game.actual_protein + app.products[productName].protein > app.game.max_protein)
+      || (app.game.actual_fat + app.products[productName].fat > app.game.max_fat)
+      || (app.game.actual_carbohydrates + app.products[productName].carbohydrates > app.game.max_carbohydrates)
+    ) {
+      alert("Jesteś przejedzony!");
+      return;
+    }
+
+    app.game.actual_kcal += app.products[productName].kcal;
+    app.game.actual_protein += app.products[productName].protein;
+    app.game.actual_fat += app.products[productName].fat;
+    app.game.actual_carbohydrates += app.products[productName].carbohydrates;
+
+    app.bars[1].kcal = app.game.actual_kcal;
+    app.bars[1].protein = app.game.actual_protein;
+    app.bars[1].fat = app.game.actual_fat;
+    app.bars[1].carbohydrates = app.game.actual_carbohydrates;
+
+    app.bars[1].refresh();
   }
 
   draw(container) {
