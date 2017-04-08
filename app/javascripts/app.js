@@ -11,14 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
   //app.state.set('welcome');
 
   setTimeout(function() {
-    let shop = new app.Shop(10);
-    shop.loadRandomProducts(
-      Object.keys(app.products).filter(name => !(name.startsWith('cooked-') || name.startsWith('fried-'))),
-      10
-    );
-    shop.draw(document.getElementById("shop"));
-
-
+    app.shop = new app.Shop(10);
   }, 500);
 
   app.Bar.init();
