@@ -54,8 +54,8 @@ app.Shop = class {
       product.draw(div);
       div.addEventListener("click", function() {
         shop.buyProduct(productName);
-        console.log(shop.cart);
         container.getElementsByClassName("projRemaining")[0].innerHTML = shop.inCart + '/' + shop.limit;
+        container.getElementsByClassName("cart")[0].innerHTML = JSON.stringify(shop.cart);
       });
       shelf.appendChild(div);
       if (++j >= this.shelfSize) {
