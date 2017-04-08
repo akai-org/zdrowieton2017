@@ -21,7 +21,7 @@ app.Bar = class {
     this.bars[0].getElementsByClassName('limit')[0].style.top=(100-this.kcal_limit).toString()+'%';
     this.bars[1].getElementsByClassName('limit')[0].style.top=(100-this.protein_limit).toString()+'%';
     this.bars[2].getElementsByClassName('limit')[0].style.top=(100-this.fat_limit).toString()+'%';
-    this.bars[3].getElementsByClassName('limit')[0].style.top=(100-this.carbohydrates_limitg).toString()+'%';
+    this.bars[3].getElementsByClassName('limit')[0].style.top=(100-this.carbohydrates_limit).toString()+'%';
   }
 
   static init() {

@@ -1,0 +1,19 @@
+.monster{
+  padding:10%;
+  img{
+    float:left;
+    margin-right:50px;
+  }
+  .message{
+   float:left;
+  }
+  a{
+    float:left;
+    margin-top:150px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius:10%;
+    background-color: $red;
+    color: white;
+  }
+}
