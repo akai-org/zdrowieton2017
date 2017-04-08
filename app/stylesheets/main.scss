@@ -5,11 +5,9 @@ $protein: #98da4e;
 $fat: #ff564d;
 $carbo: #ffa63a;
 
-body,html {
-  margin:0;
-}
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900&subset=latin-ext');
 @import 'general';
 @import 'needs';
 @import 'fridge';
+@import 'score';
 @import 'shop';
