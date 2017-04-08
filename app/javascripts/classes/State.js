@@ -26,7 +26,7 @@ app.State = class {
     if (target == "monster") {
       app.shop.reset();
       app.shop.loadRandomProducts(
-        Object.keys(app.products).filter(name => !(name.startsWith('cooked-') || name.startsWith('fried-'))),
+        Object.keys(app.products).filter(name => !(name.startsWith('cooked-') || name.startsWith('fried-') || name == 'yoghurt')),
         10
       );
       app.shop.draw(document.getElementById("shop"));

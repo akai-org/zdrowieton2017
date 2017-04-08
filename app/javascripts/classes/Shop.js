@@ -24,6 +24,8 @@ app.Shop = class {
       .sort((a, b) => a[1] - b[1])
       .slice(0, number)
       .map(item => item[0]);
+
+    this.products[Math.floor(Math.random()*number)] = "yoghurt";
   }
 
   insertProduct(productName) {
