@@ -6,6 +6,8 @@ background: -webkit-linear-gradient(right, $red, $darkred);
 background: -moz-linear-gradient(right, $red, $darkred);
 background: -o-linear-gradient(right, $red, $darkred);
 background: linear-gradient(to left, $red, $darkred);
+  background: url('../images/bg.jpg') 50% 50%;
+  background-size: cover;
   padding:0 20%;
 color: $light;
   h1{
