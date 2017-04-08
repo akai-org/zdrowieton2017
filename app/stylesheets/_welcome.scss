@@ -1,5 +1,5 @@
 .welcome{
-  margin-top:-200px;
+  margin-top:-72px;
   height:100vh;
 background: $red; /* fallback for old browsers */
 background: -webkit-linear-gradient(right, $red, $darkred);
@@ -9,14 +9,20 @@ background: linear-gradient(to left, $red, $darkred);
   padding:0 20%;
 color: $light;
   h1{
-    margin-top:200px;
+    padding-top:200px;
     font-size:85px;
+  }
+  p{
+    width:45%;
   }
   a{
     background-color:$light;
     padding: 20px;
     color: $red;
     border-radius:10%;
+    margin-left:450px;
+    margin-top: 50px;
+    font-size:20px;
   }
 
 
