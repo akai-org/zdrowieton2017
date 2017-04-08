@@ -19,6 +19,7 @@
       justify-content: center;
       align-items: center;
       margin: 0 auto;
+      overflow: hidden;
     }
 
 
@@ -47,5 +48,16 @@
     padding: 20px;
     width: 400px;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--button {
+      color: white;
+      text-decoration: none;
+      padding: 10px 30px;
+      background-color: #d31204;
+      border-radius: 20px;
+      width: 100%;
+    }
   }
 }
