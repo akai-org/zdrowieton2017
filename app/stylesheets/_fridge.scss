@@ -41,6 +41,17 @@
       &:nth-child(5n+4) {
         transform: translateX(-30px);
       }
+
+      &:after {
+        display: none;
+        content: attr(data-title);
+        width: 64px;
+        font-size: 10px;
+        height: 32px;
+        background-color: white;
+        color: #666;
+        border-radius: 10px;
+      }
     }
   }
 
