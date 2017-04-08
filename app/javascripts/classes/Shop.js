@@ -9,6 +9,7 @@ app.Shop = class {
     this.products = [];
     this.cart = {};
     this.limit = limit;
+    this.inCart = 0;
     this.shelfSize = 5;
   }
 
@@ -24,9 +25,9 @@ app.Shop = class {
   }
 
   buyProduct(productName) {
-    if (this.limit > 0) {
+    if (this.inCart < this.limit) {
       this.cart[productName] = (this.cart[productName] || 0) + 1;
-      this.limit--;
+      this.inCart++;
     }
   }
 
@@ -37,6 +38,7 @@ app.Shop = class {
   draw(container) {
     let well = container.getElementsByClassName("well")[0];
     well.innerHTML = '';
+    container.getElementsByClassName("projRemaining")[0].innerHTML = this.inCart + '/' + this.limit;
     let shop = this;
     let shelf, j;
     for (let i=0; i<this.products.length; i++) {
@@ -53,6 +55,7 @@ app.Shop = class {
       div.addEventListener("click", function() {
         shop.buyProduct(productName);
         console.log(shop.cart);
+        container.getElementsByClassName("projRemaining")[0].innerHTML = shop.inCart + '/' + shop.limit;
       });
       shelf.appendChild(div);
       if (++j >= this.shelfSize) {
