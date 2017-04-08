@@ -1,18 +1,24 @@
 .score {
-	width: 960px;
+	background: $red;
+	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	align-self: center;
+	flex-wrap: wrap;
+
 	h1,h2 {
+		align-self: center;
+		color: #FFF;
 		width: 100%;
+		text-align: center;
 	}
 	h1 {
 		font-size: 54px;
 		font-family: 'Lato', Tahoma;
 	}
 	h2 {
-		font-size: 48px;
+		font-size: 72px;
 	}
 
 	img {
