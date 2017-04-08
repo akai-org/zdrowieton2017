@@ -7,7 +7,7 @@ var app = app || {};
 app.Shop = class {
   constructor(limit) {
     this.products = [];
-    this.cart = [];
+    this.cart = {};
     this.limit = limit;
     this.shelfSize = 5;
   }
@@ -25,7 +25,7 @@ app.Shop = class {
 
   buyProduct(productName) {
     if (this.limit > 0) {
-      this.cart.push(productName);
+      this.cart[productName] = (this.cart[productName] || 0) + 1;
       this.limit--;
     }
   }
@@ -41,7 +41,6 @@ app.Shop = class {
     let shelf, j;
     for (let i=0; i<this.products.length; i++) {
       if (!shelf) {
-        console.log('new shelf!!!');
         shelf = document.createElement("div");
         shelf.className = "shelf";
         j = 0;
