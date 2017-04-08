@@ -43,7 +43,12 @@ app.Fridge = class {
     app.bars[1].fat = app.game.actual_fat;
     app.bars[1].carbohydrates = app.game.actual_carbohydrates;
 
-    app.bars[1].refresh();
+    // app.bars[1].max_kcal = app.game.actual_kcal;
+    // app.bars[1].max_protein = app.game.actual_protein;
+    // app.bars[1].max_fat = app.game.actual_fat;
+    // app.bars[1].max_carbohydrates = app.game.actual_carbohydrates;
+
+    app.bars[1].refresh(true);
   }
 
   draw(container) {
