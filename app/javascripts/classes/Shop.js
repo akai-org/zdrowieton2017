@@ -57,7 +57,6 @@ app.Shop = class {
 
   draw(container) {
     let well = container.getElementsByClassName("well")[0];
-    container.getElementsByClassName("cart")[0].innerHTML = '';
     well.innerHTML = '';
     container.getElementsByClassName("projRemaining")[0].innerHTML = this.inCart + '/' + this.limit;
     let shop = this;
@@ -71,12 +70,13 @@ app.Shop = class {
       let productName = this.products[i];
       let div = document.createElement("div");
       div.className = "item";
+      div.dataset.num = 0;
       let product = app.products[productName];
       product.draw(div);
       div.addEventListener("click", function() {
         shop.buyProduct(productName);
+        div.dataset.num = shop.cart[productName] || 0;
         container.getElementsByClassName("projRemaining")[0].innerHTML = shop.inCart + '/' + shop.limit;
-        container.getElementsByClassName("cart")[0].innerHTML = JSON.stringify(shop.cart);
       });
       shelf.appendChild(div);
       if (++j >= this.shelfSize) {

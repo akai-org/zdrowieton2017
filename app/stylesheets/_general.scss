@@ -8,15 +8,35 @@ body,html {
 }
 
 .well {
+
   .item {
     background: #eee;
     padding: 10px 15px;
     margin: 20px 20px 0;
     border-radius: 20px;
+    position: relative;
     img {
       width: 64px;
       height: 64px;
     }
+    &::after {
+      position: absolute;
+      content: attr(data-num);
+      width: 24px;
+      height: 24px;
+      border-radius: 20px;
+      font-size: 14px;
+      background-color: white;
+      color: #666;
+      font-weight: bold;
+      border-radius: 10px;
+      padding: 5px;
+      left: 0px;
+      top: 0px;
+      box-shadow: 0 0 10px #999;
+      text-align: center;
+    }
+
   }
 }
 
