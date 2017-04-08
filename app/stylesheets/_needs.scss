@@ -1,0 +1,41 @@
+.needs{
+  width:300px;
+  float:left;
+  & > div{
+    margin: 10px;
+    width:15%;
+
+    height:200px;
+    float:left;
+  }
+  .kcal{
+    background-color: $kcal;
+    .blank {
+
+    height: 50%;
+    background-color: $light;
+  }
+  }
+  .protein {
+    background-color: $protein;
+    .blank {
+
+    height: 70%;
+    background-color: $light;
+  }
+  }
+  .fat {
+
+  background-color: $fat;
+    .blank {
+    height: 90%;
+    background-color: $light;
+  }}
+  .carbohydrates {
+    background-color: $carbo;
+    .blank {
+
+    height:60%;
+    background-color: $light;
+  }}
+}

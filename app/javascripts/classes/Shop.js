@@ -35,17 +35,19 @@ app.Shop = class {
 
   draw(container) {
     let well = container.getElementsByClassName("well")[0];
-    console.log(this.products);
-    this.products.forEach(function(productName) {
+    let shop = this;
+    for (let i=0; i<this.products.length; i++) {
+      let productName = this.products[i];
       let div = document.createElement("div");
       div.className = "item";
       let product = app.products[productName];
       console.log(productName, product);
       product.draw(div);
       div.addEventListener("click", function() {
-        console.log("An item has been clicked!", product);
+        shop.buyProduct(productName);
+        console.log(shop.cart);
       });
       well.appendChild(div);
-    });
+    }
   }
 };
