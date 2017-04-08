@@ -1,14 +1,25 @@
 .monster{
-  padding:10%;
-  img{
-    float:left;
-    margin-right:50px;
+  height: 100vh;
+  display: flex;
+
+  &--right {
+    flex: 2 0 0;
   }
-  .message{
-   float:left;
+
+  &--left {
+    flex: 1 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  &--img {
+  }
+
+  &--message{
+  }
+
   a{
-    float:left;
     margin-top:150px;
     text-decoration: none;
     padding: 10px;
