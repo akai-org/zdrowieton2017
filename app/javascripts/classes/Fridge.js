@@ -60,6 +60,7 @@ app.Fridge = class {
       product.draw(div);
       div.addEventListener("click", function() {
         fridge.eatProduct(productName);
+        div.style.visibility = 'hidden';
       });
       well.appendChild(div);
     }
