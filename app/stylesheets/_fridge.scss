@@ -8,7 +8,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 70vw;
+    width: 956.2px;
 
 
     &--wrapper {
@@ -19,6 +19,7 @@
       justify-content: center;
       align-items: center;
       margin: 0 auto;
+      overflow: hidden;
     }
 
 
@@ -44,7 +45,19 @@
   }
 
   &--stats {
-    width: 30vw;
-    background-color: #f5f9ca;
+    padding: 20px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--button {
+      color: white;
+      text-decoration: none;
+      padding: 10px 30px;
+      background-color: #d31204;
+      border-radius: 20px;
+      width: 100%;
+    }
   }
 }
