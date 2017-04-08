@@ -259,7 +259,7 @@
       "serving": "368g",
       "icon": "coke.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2340?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=pineapple&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Cla to węglowodany i kalorie. TYLKO",
       "process": {}
     },
     "chocolate": {
@@ -271,7 +271,7 @@
       "serving": "162g",
       "icon": "chocolate.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/6451?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=chocolate&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Mmm, czekoladka.",
       "process": {}
     },
     "sausage": {
@@ -283,7 +283,7 @@
       "serving": "23g",
       "icon": "sausage.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/1623?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=sausage&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Wskazówka o kiełbasie",
       "process": {}
     },
     "bread": {
@@ -295,7 +295,7 @@
       "serving": "100g",
       "icon": "bread.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/5611?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=bread&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Chlebek jest dobry do kanapki.",
       "process": {}
     },
     "chicken": {
@@ -305,9 +305,9 @@
       "fat": 9.07,
       "carbohydrates": 0.04,
       "serving": "112g",
-      "icon": "bread.svg",
+      "icon": "chicken.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/1058?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=chicken&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Kurczak to białko (na masę czy cośtam)",
       "process": {}
     },
     "beans": {
@@ -319,7 +319,7 @@
       "serving": "100g",
       "icon": "beans.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/4746?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=bean&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Fasolka najlepsza świeża, nie z puszki",
       "process": {}
     },
     "egg": {
@@ -331,7 +331,7 @@
       "serving": "50g",
       "icon": "egg.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/118?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=egg+cooked&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Jajko najlepiej gotować, nie smażyć",
       "process": {}
     },
     "nuts": {
@@ -341,9 +341,9 @@
       "fat": 17.22,
       "carbohydrates": 4.73,
       "serving": "28.35g",
-      "icon": "egg.svg",
+      "icon": "walnut.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/3666?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=hazelnut&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Orzechy są bardzo tłuste.",
       "process": {}
     },
     "rice": {
@@ -353,9 +353,9 @@
       "fat": 0.33,
       "carbohydrates": 36.70,
       "serving": "174g",
-      "icon": "egg.svg",
+      "icon": "rice.svg",
       "dbLink": "",
-      "hint": "",
+      "hint": "Ryż to dobry zamiennik kaszy i makaronu",
       "process": {}
     },
     "pasta": {
@@ -367,7 +367,7 @@
       "serving": "107g",
       "icon": "pasta.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/6624?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=pasta&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Makaron pasuje wszystkim",
       "process": {}
     },
     "milk": {
@@ -378,7 +378,7 @@
       "carbohydrates": 11.35,
       "serving": "244g",
       "icon": "milk.svg",
-      "dbLink": "",
+      "dbLink": "Krowa daje mleko.",
       "hint": "https://ndb.nal.usda.gov/ndb/foods/show/71?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=milk&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
       "process": {}
     },
@@ -391,7 +391,7 @@
       "serving": "113g",
       "icon": "vanillajs.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/158290?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=yoghurt+vanilla&ds=Branded+Food+Products&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Jogurt Vanilla.js dla wszystkich programistóff.",
       "process": {}
     },
     "steak": {
@@ -403,7 +403,7 @@
       "serving": "417g",
       "icon": "steak.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/3772?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=steak+cooked&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Stek najlepiej smażyć na średnio",
       "process": {}
     },
     "pork": {
@@ -415,7 +415,7 @@
       "serving": "85g",
       "icon": "pork.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2794?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=pork+cooked&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "wieprzowinka",
       "process": {}
     },
     "peas": {
@@ -427,7 +427,7 @@
       "serving": "160g",
       "icon": "peas.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/3426?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=peas&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Groszek jest zielony",
       "process": {}
     },
     "butter": {
@@ -439,7 +439,7 @@
       "serving": "14.2g",
       "icon": "butter.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/132?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=butter&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "masełko",
       "process": {}
     },
     "nutella": {
@@ -451,7 +451,7 @@
       "serving": "37g",
       "icon": "nutella.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/34882?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=nutella&ds=Branded+Food+Products&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Nut***a jest tłusta. Bardzo. I kaloryczna.",
       "process": {}
     },
     "salmon": {
@@ -463,7 +463,7 @@
       "serving": "155g",
       "icon": "salmon.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/4564?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=salmon+cooked&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "",
+      "hint": "Rybki są zdrowe, dobrze piecze się je na parze.",
       "process": {}
     }
   }
