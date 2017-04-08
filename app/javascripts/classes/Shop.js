@@ -9,6 +9,7 @@ app.Shop = class {
     this.products = [];
     this.cart = [];
     this.limit = limit;
+    this.shelfSize = 5;
   }
 
   loadRandomProducts(set, number) {
@@ -37,8 +38,14 @@ app.Shop = class {
     let well = container.getElementsByClassName("well")[0];
     well.innerHTML = '';
     let shop = this;
-    console.log('n=', this.products.length);
+    let shelf, j;
     for (let i=0; i<this.products.length; i++) {
+      if (!shelf) {
+        console.log('new shelf!!!');
+        shelf = document.createElement("div");
+        shelf.className = "shelf";
+        j = 0;
+      }
       let productName = this.products[i];
       let div = document.createElement("div");
       div.className = "item";
@@ -48,7 +55,12 @@ app.Shop = class {
         shop.buyProduct(productName);
         console.log(shop.cart);
       });
-      well.appendChild(div);
+      shelf.appendChild(div);
+      if (++j >= this.shelfSize) {
+        well.appendChild(shelf);
+        shelf = null;
+      }
     }
+    if (shelf) well.appendChild(shelf);
   }
 };
