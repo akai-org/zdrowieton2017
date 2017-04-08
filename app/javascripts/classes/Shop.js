@@ -78,8 +78,9 @@ app.Shop = class {
         shelf = null;
       }
     }
-    document.querySelector("#shop .start").addEventListener("click", function() {
+
+    document.querySelector("#shop .start").onclick = function() {
       shop.checkout();
-    });
+    };
   }
 };

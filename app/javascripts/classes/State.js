@@ -24,7 +24,6 @@ app.State = class {
     document.getElementById(target).classList.remove("hidden");
 
     if (target == "monster") {
-      console.log("RESETTTT");
       app.shop.reset();
       app.shop.loadRandomProducts(
         Object.keys(app.products).filter(name => !(name.startsWith('cooked-') || name.startsWith('fried-'))),
