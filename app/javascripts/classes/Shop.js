@@ -7,8 +7,10 @@ var app = app || {};
 app.Shop = class {
   constructor(limit) {
     this.products = [];
-    this.cart = [];
+    this.cart = {};
     this.limit = limit;
+    this.inCart = 0;
+    this.shelfSize = 5;
   }
 
   loadRandomProducts(set, number) {
@@ -23,9 +25,9 @@ app.Shop = class {
   }
 
   buyProduct(productName) {
-    if (this.limit > 0) {
-      this.cart.push(productName);
-      this.limit--;
+    if (this.inCart < this.limit) {
+      this.cart[productName] = (this.cart[productName] || 0) + 1;
+      this.inCart++;
     }
   }
 
@@ -35,19 +37,32 @@ app.Shop = class {
 
   draw(container) {
     let well = container.getElementsByClassName("well")[0];
+    well.innerHTML = '';
+    container.getElementsByClassName("projRemaining")[0].innerHTML = this.inCart + '/' + this.limit;
     let shop = this;
+    let shelf, j;
     for (let i=0; i<this.products.length; i++) {
+      if (!shelf) {
+        shelf = document.createElement("div");
+        shelf.className = "shelf";
+        j = 0;
+      }
       let productName = this.products[i];
       let div = document.createElement("div");
       div.className = "item";
       let product = app.products[productName];
-      console.log(productName, product);
       product.draw(div);
       div.addEventListener("click", function() {
         shop.buyProduct(productName);
-        console.log(shop.cart);
+        container.getElementsByClassName("projRemaining")[0].innerHTML = shop.inCart + '/' + shop.limit;
+        container.getElementsByClassName("cart")[0].innerHTML = JSON.stringify(shop.cart);
       });
-      well.appendChild(div);
+      shelf.appendChild(div);
+      if (++j >= this.shelfSize) {
+        well.appendChild(shelf);
+        shelf = null;
+      }
     }
+    if (shelf) well.appendChild(shelf);
   }
 };

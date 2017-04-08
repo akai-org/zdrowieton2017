@@ -1,0 +1,11 @@
+#shop {
+  margin: auto;
+  width: 800px;
+}
+
+.shelf {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  border-bottom: 20px solid #942a00;
+}

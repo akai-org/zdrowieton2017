@@ -10,9 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   setTimeout(function() {
     let shop = new app.Shop(10);
-    shop.loadRandomProducts(Object.keys(app.products), 20);
+    shop.loadRandomProducts(
+      Object.keys(app.products).filter(name => !(name.startsWith('cooked-') || name.startsWith('fried-'))),
+      10
+    );
     shop.draw(document.getElementById("shop"));
-  }, 2000);
+  }, 500);
 
   app.Bar.init();
 });
