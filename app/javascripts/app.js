@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
   app.started = true;
   app.Product.load('/json/foods.json');
 
+  app.fridge = new app.Fridge();
+
   app.state = new app.State();
   //app.state.set('welcome');
 
@@ -15,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
       10
     );
     shop.draw(document.getElementById("shop"));
+
+
   }, 500);
 
   app.Bar.init();
