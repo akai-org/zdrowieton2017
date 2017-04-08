@@ -1,6 +1,8 @@
 var app = app || {};
 
 document.addEventListener("DOMContentLoaded", function() {
+  if(app.started) return;
+  app.started = true;
   app.Product.load('/json/foods.json');
 
   app.state = new app.State();
@@ -14,4 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
     );
     shop.draw(document.getElementById("shop"));
   }, 500);
+
+  app.Bar.init();
 });
