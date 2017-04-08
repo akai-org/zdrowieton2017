@@ -7,14 +7,15 @@ var sourcemaps  = require('gulp-sourcemaps');
 var fileinclude = require('gulp-file-include');
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['html', 'images', 'sass', 'babel'], function() {
+gulp.task('serve', ['html', 'images', 'sass', 'babel', 'json'], function() {
 
   browserSync.init({
     server: "./public"
   });
 
   gulp.watch("app/stylesheets/*.scss", ['sass']);
-  gulp.watch("app/javascripts/*.js", ['babel']);
+  gulp.watch("app/javascripts/**/*.js", ['babel']);
+  gulp.watch("app/json/*.json", ['json']);
   gulp.watch("app/*.html", ['html']);
   gulp.watch("public/*.html").on('change', browserSync.reload);
 });
@@ -47,6 +48,11 @@ gulp.task('html', function() {
       basepath: '@file'
     }))
     .pipe(gulp.dest("public/"));
+});
+
+gulp.task('json', function() {
+  return gulp.src("app/json/*.json")
+    .pipe(gulp.dest("public/json/"));
 });
 
 gulp.task('images', function() {
