@@ -1,0 +1,23 @@
+.tips{
+  background: $black; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, $black, $lighterblack);
+  background: -moz-linear-gradient(right, $black, $lighterblack);
+  background: -o-linear-gradient(right, $black, $lighterblack);
+  background: linear-gradient(to left, $black, $lighterblack);
+  height:100vh;
+  color:white;
+  container{
+    width:50%;
+    margin:0 auto;
+  }
+  p{
+
+  }
+  a{
+    background-color:$light;
+    padding: 20px;
+    color: $red;
+    border-radius:10%;
+    font-size:20px;
+  }
+}
