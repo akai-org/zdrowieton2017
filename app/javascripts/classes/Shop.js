@@ -35,13 +35,14 @@ app.Shop = class {
 
   draw(container) {
     let well = container.getElementsByClassName("well")[0];
+    well.innerHTML = '';
     let shop = this;
+    console.log('n=', this.products.length);
     for (let i=0; i<this.products.length; i++) {
       let productName = this.products[i];
       let div = document.createElement("div");
       div.className = "item";
       let product = app.products[productName];
-      console.log(productName, product);
       product.draw(div);
       div.addEventListener("click", function() {
         shop.buyProduct(productName);

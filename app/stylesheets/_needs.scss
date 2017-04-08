@@ -1,41 +1,63 @@
-.needs{
-  width:300px;
-  float:left;
-  & > div{
-    margin: 10px;
-    width:15%;
+.needs {
+  width: 300px;
+  float: left;
 
-    height:200px;
-    float:left;
+  & > div {
+    margin: 10px;
+    width: 15%;
+
+    height: 200px;
+    float: left;
+    position:relative;
+    .limit{
+      border:3px solid $dark;
+      position: absolute;
+      width:40%;
+      margin: 0 ;
+    }
   }
-  .kcal{
+  .kcal {
     background-color: $kcal;
     .blank {
 
-    height: 50%;
-    background-color: $light;
-  }
+      height: 50%;
+      background-color: $light;
+    }
+    .limit{
+      top:30%;
+    }
   }
   .protein {
     background-color: $protein;
     .blank {
 
-    height: 70%;
-    background-color: $light;
-  }
+      height: 70%;
+      background-color: $light;
+    }
+    .limit{
+      top:80%;
+    }
   }
   .fat {
-
-  background-color: $fat;
+    background-color: $fat;
     .blank {
-    height: 90%;
-    background-color: $light;
-  }}
+      height: 90%;
+      background-color: $light;
+    }
+    .limit{
+      top:60%;
+    }
+  }
   .carbohydrates {
     background-color: $carbo;
     .blank {
 
-    height:60%;
-    background-color: $light;
-  }}
+      height: 60%;
+      background-color: $light;
+    }
+    .limit{
+      top:60%;
+    }
+  }
+
 }

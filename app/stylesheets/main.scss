@@ -1,4 +1,5 @@
 $light: #ffebdb;
+$dark: #7a7774;
 $kcal: #81cfff;
 $protein: #98da4e;
 $fat: #ff564d;
@@ -8,6 +9,11 @@ body,html {
   margin:0;
 }
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900&subset=latin-ext');
+@import 'general';
 @import 'needs';
 @import 'fridge';
+<<<<<<< HEAD
 @import 'score';
+=======
+@import 'shop';
+>>>>>>> 595814950842ad2db9a11a8f0350d8db3233641b

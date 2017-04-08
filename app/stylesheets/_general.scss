@@ -1,0 +1,20 @@
+.hidden {
+  display: none;
+}
+
+.well {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+
+  .item {
+    background: #eee;
+    padding: 10px 15px;
+    margin: 20px 10px;
+    border-radius: 20px;
+    img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}
