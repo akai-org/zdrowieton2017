@@ -1,11 +1,24 @@
 .fridge {
   height: 100vh;
+  background-color: pink;
+  display: flex;
 
-  &--fridge {
-    width: 60%;
+  &--content {
+    background-image: url('./images/fridge.png');
+    width: 60vw;
+
+    &--item {
+      width: 64px;
+      height: 64px;
+      border-radius: 10px;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &--stats {
-
+    width: 40vw;
   }
 }
