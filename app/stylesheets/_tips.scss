@@ -6,19 +6,18 @@
   background: linear-gradient(to left, $black, $lighterblack);
   height:100vh;
   color:white;
-  
+
   .container{
     width:50%;
     margin:0 auto;
+    padding-top:150px;
   }
   p{
-
+  font-size:40px;
+    padding-bottom: 50px;
   }
   a{
-    background-color:$light;
-    padding: 20px;
-    color: $red;
-    border-radius:10%;
     font-size:20px;
+    padding: 20px;
   }
 }
