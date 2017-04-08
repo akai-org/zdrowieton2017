@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
     let shop = new app.Shop(10);
     shop.loadRandomProducts(Object.keys(app.products), 20);
-    shop.draw(document.querySelector(".shop.container"));
+    shop.draw(document.getElementById("shop"));
   }, 2000);
 });
