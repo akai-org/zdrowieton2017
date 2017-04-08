@@ -72,7 +72,7 @@
       "fat": 0.30,
       "carbohydrates": 15.50,
       "serving": "100g",
-      "icon": "",
+      "icon": "orange.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2288?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=orange&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
       "hint": "",
       "process": {}
@@ -84,7 +84,7 @@
       "fat": 0.30,
       "carbohydrates": 7.68,
       "serving": "100g",
-      "icon": "",
+      "icon": "strawberry.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2385?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=strawberry&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
       "hint": "",
       "process": {}
@@ -96,7 +96,7 @@
       "fat": 0.20,
       "carbohydrates": 3.89,
       "serving": "100g",
-      "icon": "",
+      "icon": "tomato.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/3223?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=tomato&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
       "hint": "",
       "process": {}
@@ -108,7 +108,7 @@
       "fat": 0,
       "carbohydrates": 5.81,
       "serving": "354g",
-      "icon": "",
+      "icon": "beer.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/4126?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=beer&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
       "hint": "",
       "process": {}
@@ -120,7 +120,7 @@
       "fat": 10.30,
       "carbohydrates": 22.86,
       "serving": "45g",
-      "icon": "",
+      "icon": "donut.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/5756?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=donut&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
       "hint": "",
       "process": {}
@@ -132,7 +132,7 @@
       "fat": 0.38,
       "carbohydrates": 30.80,
       "serving": "68g",
-      "icon": "",
+      "icon": "apple.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2122?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=apple&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
       "hint": "",
       "process": {}
@@ -144,7 +144,7 @@
       "fat": 7.78,
       "carbohydrates": 0.63,
       "serving": "28.35g",
-      "icon": "",
+      "icon": "cheese.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/22?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=cheese&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
       "hint": "",
       "process": {}
@@ -156,7 +156,7 @@
       "fat": 11.11,
       "carbohydrates": 45.45,
       "serving": "100g",
-      "icon": "",
+      "icon": "cupcake.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/19274?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=cupcake&ds=&qt=&qp=&qa=&qn=&q=&ing=",
       "hint": "",
       "process": {}
@@ -168,7 +168,7 @@
       "fat": 15.00,
       "carbohydrates": 12.00,
       "serving": "63g",
-      "icon": "",
+      "icon": "sandwich.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/19274?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=cupcake&ds=&qt=&qp=&qa=&qn=&q=&ing=",
       "hint": "",
       "process": {}
@@ -180,7 +180,7 @@
       "fat": 8.73,
       "carbohydrates": 0,
       "serving": "114g",
-      "icon": "",
+      "icon": "turkey.svg",
       "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/1038?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=turkey&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
       "hint": "",
       "process": {
