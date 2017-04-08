@@ -26,8 +26,15 @@
   }
 
   &--button {
-    position: absolute;
     top: 320px;
-    left: 750px;
+  }
+
+  .button {
+    width:100px;
+    height:400px;
+  }
+
+  .needs {
+    margin-bottom: 275px;
   }
 }
