@@ -38,7 +38,7 @@
       "hint": "Czy wiesz że 100g ziemniaków ma mniej niż 1g cukrów?",
       "process": {
         "cook": "cooked-potato",
-        "fry": "french-fries"
+        "fry": "fried-potato"
       }
     },
     "cooked-potato": {
@@ -53,7 +53,7 @@
       "hint": "",
       "process": {}
     },
-    "french-fries": {
+    "fried-potato": {
       "displayName": "Frytki ziemniaczane",
       "kcal": 152,
       "protein": 2.57,
@@ -187,6 +187,284 @@
         "cook": "cooked-turkey",
         "fry": "fried-turkey"
       }
+    },
+    "cooked-turkey": {
+      "displayName": "Indyk gotowany",
+      "kcal": 166,
+      "protein": 22.44,
+      "fat": 8.53,
+      "carbohydrates": 0,
+      "serving": "82g",
+      "icon": "turkey.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/1039?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=turkey+cooked&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "fried-turkey": {
+      "displayName": "Indyk smażony",
+      "kcal": 107,
+      "protein": 16.07,
+      "fat": 2.68,
+      "carbohydrates": 5.36,
+      "serving": "100g",
+      "icon": "turkey.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/139790?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=turkey+fried&ds=Branded+Food+Products&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "broccoli": {
+      "displayName": "Brokuł",
+      "kcal": 207,
+      "protein": 17.15,
+      "fat": 2.25,
+      "carbohydrates": 40.37,
+      "serving": "608g",
+      "icon": "broccoli.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/1038?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=turkey&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {
+        "cook": "cooked-broccoli"
+      }
+    },
+    "cooked-broccoli": {
+      "displayName": "Brokuł gotowany",
+      "kcal": 175,
+      "protein": 11.9,
+      "fat": 2.05,
+      "carbohydrates": 35.9,
+      "serving": "500g",
+      "icon": "broccoli.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/1038?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=turkey&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "pineapple": {
+      "displayName": "Ananas",
+      "kcal": 82,
+      "protein": 0.89,
+      "fat": 0.20,
+      "carbohydrates": 21.65,
+      "serving": "165g",
+      "icon": "pineapple.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2340?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=pineapple&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "coke": {
+      "displayName": "Coca-cola",
+      "kcal": 151,
+      "protein": 0,
+      "fat": 0,
+      "carbohydrates": 38.93,
+      "serving": "368g",
+      "icon": "coke.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2340?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=pineapple&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "chocolate": {
+      "displayName": "Czekolada gorzka",
+      "kcal": 885,
+      "protein": 7.91,
+      "fat": 50.67,
+      "carbohydrates": 99.10,
+      "serving": "162g",
+      "icon": "chocolate.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/6451?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=chocolate&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "sausage": {
+      "displayName": "Kiełbasa (berlinka)",
+      "kcal": 53,
+      "protein": 3.51,
+      "fat": 3.96,
+      "carbohydrates": 0.60,
+      "serving": "23g",
+      "icon": "sausage.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/1623?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=sausage&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "bread": {
+      "displayName": "Chlep (pszenny)",
+      "kcal": 274,
+      "protein": 10.67,
+      "fat": 4.53,
+      "carbohydrates": 47.54,
+      "serving": "100g",
+      "icon": "bread.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/5611?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=bread&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "chicken": {
+      "displayName": "Kurczak (udko)",
+      "kcal": 160,
+      "protein": 19.53,
+      "fat": 9.07,
+      "carbohydrates": 0.04,
+      "serving": "112g",
+      "icon": "bread.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/1058?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=chicken&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "beans": {
+      "displayName": "Fasola (zielona)",
+      "kcal": 155,
+      "protein": 5.54,
+      "fat": 5.15,
+      "carbohydrates": 21.63,
+      "serving": "100g",
+      "icon": "beans.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/4746?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=bean&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "egg": {
+      "displayName": "Jajko (na twardo)",
+      "kcal": 78,
+      "protein": 6.29,
+      "fat": 5.30,
+      "carbohydrates": 0.56,
+      "serving": "50g",
+      "icon": "egg.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/118?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=egg+cooked&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "nuts": {
+      "displayName": "Orzech laskowy",
+      "kcal": 178,
+      "protein": 4.24,
+      "fat": 17.22,
+      "carbohydrates": 4.73,
+      "serving": "28.35g",
+      "icon": "egg.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/3666?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=hazelnut&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "rice": {
+      "displayName": "Ryż",
+      "kcal": 169,
+      "protein": 3.51,
+      "fat": 0.33,
+      "carbohydrates": 36.70,
+      "serving": "174g",
+      "icon": "egg.svg",
+      "dbLink": "",
+      "hint": "",
+      "process": {}
+    },
+    "pasta": {
+      "displayName": "Makaron penne",
+      "kcal": 168,
+      "protein": 6.21,
+      "fat": 1.00,
+      "carbohydrates": 32.73,
+      "serving": "107g",
+      "icon": "pasta.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/6624?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=pasta&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "milk": {
+      "displayName": "Mleko",
+      "kcal": 156,
+      "protein": 8.00,
+      "fat": 8.93,
+      "carbohydrates": 11.35,
+      "serving": "244g",
+      "icon": "milk.svg",
+      "dbLink": "",
+      "hint": "https://ndb.nal.usda.gov/ndb/foods/show/71?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=milk&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "process": {}
+    },
+    "yoghurt": {
+      "displayName": "Jogurt Vanilla.js",
+      "kcal": 150,
+      "protein": 6.00,
+      "fat": 6.99,
+      "carbohydrates": 18.00,
+      "serving": "113g",
+      "icon": "vanillajs.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/158290?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=yoghurt+vanilla&ds=Branded+Food+Products&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "steak": {
+      "displayName": "Stek",
+      "kcal": 922,
+      "protein": 115.30,
+      "fat": 47.37,
+      "carbohydrates": 0,
+      "serving": "417g",
+      "icon": "steak.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/3772?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=steak+cooked&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "pork": {
+      "displayName": "Wieprzowina",
+      "kcal": 246,
+      "protein": 22.69,
+      "fat": 17.03,
+      "carbohydrates": 0.49,
+      "serving": "85g",
+      "icon": "pork.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2794?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=pork+cooked&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "peas": {
+      "displayName": "Groszek",
+      "kcal": 64,
+      "protein": 5.23,
+      "fat": 0.37,
+      "carbohydrates": 10.34,
+      "serving": "160g",
+      "icon": "peas.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/3426?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=peas&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "butter": {
+      "displayName": "Masło",
+      "kcal": 102,
+      "protein": 0.12,
+      "fat": 11.52,
+      "carbohydrates": 0.01,
+      "serving": "14.2g",
+      "icon": "butter.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/132?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=butter&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "nutella": {
+      "displayName": "Taki czekoladowy krem",
+      "kcal": 102,
+      "protein": 0.12,
+      "fat": 11.52,
+      "carbohydrates": 0.01,
+      "serving": "37g",
+      "icon": "nutella.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/34882?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=nutella&ds=Branded+Food+Products&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "salmon": {
+      "displayName": "Losoś",
+      "kcal": 285,
+      "protein": 42.41,
+      "fat": 11.62,
+      "carbohydrates": 0,
+      "serving": "155g",
+      "icon": "fish.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/4564?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=salmon+cooked&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
     }
   }
 }
