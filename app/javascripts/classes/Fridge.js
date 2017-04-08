@@ -32,7 +32,7 @@ app.Fridge = class {
       let product = app.products[productName];
       let div = document.createElement("div");
       div.className = "fridge--content--item";
-      div.dataset.title = 'tooltip text';
+      div.dataset.title = product.kcal+' kcal, białko: '+product.protein+', węglowodany: '+product.carbohydrates+', tłuszcze: '+product.fat;
       product.draw(div);
       div.addEventListener("click", function() {
         fridge.eatProduct(productName);
