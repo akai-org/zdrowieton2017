@@ -1,0 +1,46 @@
+{
+  "foods": {
+    "carrot": {
+      "displayName": "Marchewka",
+      "kcal": 41,
+      "protein": 0.93,
+      "fat": 0.24,
+      "carbohydrates": 9.58,
+      "serving": "100g",
+      "icon": "",
+      "db-link": "https://ndb.nal.usda.gov/ndb/foods/show/2901?fg=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=carrot&ds=&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "Czy wiesz że marchewka zawiera 88% wody?",
+      "process": {
+        "cook": "cooked-carrot"
+      }
+    },
+    "cooked-carrot": {
+      "displayName": "Gotowana marchewka",
+      "kcal": 35,
+      "protein": 0.76,
+      "fat": 0.18,
+      "carbohydrates": 8.22,
+      "serving": "100g",
+      "icon": "",
+      "db-link": "https://ndb.nal.usda.gov/ndb/foods/show/2902?fg=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=carrot+cooked&ds=&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "Czy wiesz że marchewka zawiera 88% wody?",
+      "process": {
+        "cook": "cooked-carrot"
+      }
+    },
+    "potato": {
+      "displayName": "Ziemniak",
+      "kcal": 35,
+      "protein": 0.76,
+      "fat": 0.18,
+      "carbohydrates": 8.22,
+      "serving": "100g",
+      "icon": "",
+      "db-link": "https://ndb.nal.usda.gov/ndb/foods/show/2902?fg=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=carrot+cooked&ds=&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "Czy wiesz że marchewka zawiera 88% wody?",
+      "process": {
+        "cook": "cooked-carrot"
+      }
+    }
+  }
+}
