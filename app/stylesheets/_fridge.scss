@@ -4,8 +4,15 @@
   display: flex;
 
   &--content {
-    background-image: url('./images/fridge.png');
-    width: 60vw;
+    background-image: url('../images/fridge.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
 
     &--item {
       width: 64px;
@@ -13,12 +20,14 @@
       border-radius: 10px;
       background: black;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
   }
 
   &--stats {
-    width: 40vw;
+    width: 30vw;
+    background-color: #f5f9ca;
   }
 }
