@@ -7,8 +7,8 @@
       "fat": 0.24,
       "carbohydrates": 9.58,
       "serving": "100g",
-      "icon": "",
-      "db-link": "https://ndb.nal.usda.gov/ndb/foods/show/2901?fg=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=carrot&ds=&qt=&qp=&qa=&qn=&q=&ing=",
+      "icon": "carrot.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2901?fg=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=carrot&ds=&qt=&qp=&qa=&qn=&q=&ing=",
       "hint": "Czy wiesz że marchewka zawiera 88% wody?",
       "process": {
         "cook": "cooked-carrot"
@@ -21,25 +21,171 @@
       "fat": 0.18,
       "carbohydrates": 8.22,
       "serving": "100g",
-      "icon": "",
-      "db-link": "https://ndb.nal.usda.gov/ndb/foods/show/2902?fg=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=carrot+cooked&ds=&qt=&qp=&qa=&qn=&q=&ing=",
+      "icon": "carrot.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2902?fg=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=carrot+cooked&ds=&qt=&qp=&qa=&qn=&q=&ing=",
       "hint": "Czy wiesz że marchewka zawiera 88% wody?",
-      "process": {
-        "cook": "cooked-carrot"
-      }
+      "process": {}
     },
     "potato": {
       "displayName": "Ziemniak",
-      "kcal": 35,
-      "protein": 0.76,
-      "fat": 0.18,
-      "carbohydrates": 8.22,
+      "kcal": 77,
+      "protein": 2.05,
+      "fat": 0.09,
+      "carbohydrates": 17.49,
       "serving": "100g",
-      "icon": "",
-      "db-link": "https://ndb.nal.usda.gov/ndb/foods/show/2902?fg=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=carrot+cooked&ds=&qt=&qp=&qa=&qn=&q=&ing=",
-      "hint": "Czy wiesz że marchewka zawiera 88% wody?",
+      "icon": "potatoe.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/3080?manu=&fgcd=&ds=",
+      "hint": "Czy wiesz że 100g ziemniaków ma mniej niż 1g cukrów?",
       "process": {
-        "cook": "cooked-carrot"
+        "cook": "cooked-potato",
+        "fry": "french-fries"
+      }
+    },
+    "cooked-potato": {
+      "displayName": "Gotowany ziemniak",
+      "kcal": 87,
+      "protein": 1.87,
+      "fat": 0.10,
+      "carbohydrates": 20.13,
+      "serving": "100g",
+      "icon": "potatoe.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/3093?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=potato+cooked&ds=&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "french-fries": {
+      "displayName": "Frytki ziemniaczane",
+      "kcal": 152,
+      "protein": 2.57,
+      "fat": 3.76,
+      "carbohydrates": 26.98,
+      "serving": "100g",
+      "icon": "fries.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/3134?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=fries&ds=&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "orange": {
+      "displayName": "Pomarańcza",
+      "kcal": 63,
+      "protein": 1.30,
+      "fat": 0.30,
+      "carbohydrates": 15.50,
+      "serving": "100g",
+      "icon": "orange.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2288?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=orange&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "strawberry": {
+      "displayName": "Truskawka",
+      "kcal": 32,
+      "protein": 0.67,
+      "fat": 0.30,
+      "carbohydrates": 7.68,
+      "serving": "100g",
+      "icon": "strawberry.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2385?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=strawberry&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "tomato": {
+      "displayName": "Pomidor",
+      "kcal": 18,
+      "protein": 0.88,
+      "fat": 0.20,
+      "carbohydrates": 3.89,
+      "serving": "100g",
+      "icon": "tomato.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/3223?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=tomato&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "beer": {
+      "displayName": "Piwo jasne",
+      "kcal": 103,
+      "protein": 0.85,
+      "fat": 0,
+      "carbohydrates": 5.81,
+      "serving": "354g",
+      "icon": "beer.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/4126?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=beer&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "donut": {
+      "displayName": "Pączek",
+      "kcal": 192,
+      "protein": 2.34,
+      "fat": 10.30,
+      "carbohydrates": 22.86,
+      "serving": "45g",
+      "icon": "donut.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/5756?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=donut&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "apple": {
+      "displayName": "Jabłko",
+      "kcal": 116,
+      "protein": 0.58,
+      "fat": 0.38,
+      "carbohydrates": 30.80,
+      "serving": "68g",
+      "icon": "apple.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/2122?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=apple&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "cheese": {
+      "displayName": "Ser żółty",
+      "kcal": 101,
+      "protein": 7.07,
+      "fat": 7.78,
+      "carbohydrates": 0.63,
+      "serving": "28.35g",
+      "icon": "cheese.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/22?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=cheese&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "cupcake": {
+      "displayName": "Babeczka",
+      "kcal": 202,
+      "protein": 4.04,
+      "fat": 11.11,
+      "carbohydrates": 45.45,
+      "serving": "100g",
+      "icon": "cupcake.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/19274?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=cupcake&ds=&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "sandwich": {
+      "displayName": "Kanapka",
+      "kcal": 200,
+      "protein": 7.00,
+      "fat": 15.00,
+      "carbohydrates": 12.00,
+      "serving": "63g",
+      "icon": "sandwich.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/19274?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=cupcake&ds=&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {}
+    },
+    "turkey": {
+      "displayName": "Indyk",
+      "kcal": 169,
+      "protein": 22.41,
+      "fat": 8.73,
+      "carbohydrates": 0,
+      "serving": "114g",
+      "icon": "turkey.svg",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/1038?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=turkey&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "",
+      "process": {
+        "cook": "cooked-turkey",
+        "fry": "fried-turkey"
       }
     }
   }
