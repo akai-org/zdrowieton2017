@@ -44,7 +44,7 @@ app.State = class {
       let score0 = deltaKcal + deltaProtein + deltaFat + deltaCarbohydrates;*/
       let score = Math.round(Math.random()*80 + 50);
       document.querySelector('h2').innerHTML = score;
-      let totalScore = (parseInt(document.querySelector('#total')) || 0) + score;
+      let totalScore = (parseInt(document.querySelector('#total').innerHTML) || 0) + score;
       document.querySelector('#total').innerHTML = totalScore;
     }
   }
