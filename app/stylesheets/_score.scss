@@ -1,5 +1,9 @@
 .score {
 	background: $red;
+	background: -webkit-linear-gradient(right, $red, $darkred);
+	background: -moz-linear-gradient(right, $red, $darkred);
+	background: -o-linear-gradient(right, $red, $darkred);
+	background: linear-gradient(to left, $red, $darkred);
 	height: 100vh;
 	display: flex;
 	align-items: center;
