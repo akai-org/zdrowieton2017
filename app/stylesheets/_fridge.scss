@@ -33,6 +33,7 @@
       justify-content: center;
       align-items: center;
       margin: 13.5px 40px;
+      position: relative;
 
       &:nth-child(5n+2) {
         transform: translateX(30px);
@@ -42,17 +43,27 @@
         transform: translateX(-30px);
       }
 
-      &:after {
+      &::after {
+        position: absolute;
         display: none;
         content: attr(data-title);
         width: 64px;
         font-size: 10px;
-        height: 32px;
         background-color: white;
         color: #666;
         border-radius: 10px;
+        padding: 5px;
+        left: 16px;
+        top: 16px;
+        box-shadow: 0 0 10px #666;
       }
-      
+
+      &:hover {
+        &::after {
+          display: block;
+        }
+      }
+
       img {
         width: 100%;
       }
