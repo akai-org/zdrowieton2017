@@ -13,6 +13,12 @@ app.Shop = class {
     this.shelfSize = 5;
   }
 
+  reset() {
+    this.products = [];
+    this.cart = {};
+    this.inCart = 0;
+  }
+
   loadRandomProducts(set, number) {
     this.products = set.map(name => [name, Math.random()])
       .sort((a, b) => a[1] - b[1])
@@ -45,6 +51,7 @@ app.Shop = class {
 
   draw(container) {
     let well = container.getElementsByClassName("well")[0];
+    container.getElementsByClassName("cart")[0].innerHTML = '';
     well.innerHTML = '';
     container.getElementsByClassName("projRemaining")[0].innerHTML = this.inCart + '/' + this.limit;
     let shop = this;

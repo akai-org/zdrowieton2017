@@ -9,6 +9,10 @@ app.Fridge = class {
     this.products = [];
   }
 
+  clear() {
+    this.products = [];
+  }
+
   insertProduct(productName) {
     console.log('inserting');
     this.products.push(productName);
