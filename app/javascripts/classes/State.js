@@ -15,6 +15,9 @@ app.State = class {
   set(target) {
     //target = target.substring(1);
     target = target.replace('#', '');
+    if(target == 'monster') {
+      app.game.random();
+    }
     //if( (target) && (0 === target.length) ) return;
     for(let i in app.states) {
       let state = app.states[i];
