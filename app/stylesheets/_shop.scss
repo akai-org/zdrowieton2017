@@ -15,11 +15,14 @@
   float: right;
   height: 100px;
 }
-
-#shop .circleScore {
+.shop{
+	position:relative;
+	height:100vh;
+}
+.shop .circleScore {
 	text-align: center;
 	position: absolute;
-	left: 2%;
+	left: -20%;
 	top: 80%;
 	background: $red;
 	width: 100px;
