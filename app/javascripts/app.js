@@ -18,4 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }, 500);
 
   app.Bar.init();
+
+  app.game = new app.Game();
+  app.game.random();
 });
