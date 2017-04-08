@@ -24,3 +24,10 @@ section{
   height:100vh;
 
 }
+a{
+  text-decoration: none;
+  padding: 10px;
+  border-radius:10%;
+  background-color: $red;
+  color: white;
+}
