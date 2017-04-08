@@ -11,9 +11,9 @@ app.Product = class {
         var contentType = response.headers.get("content-type");
         if(contentType && contentType.indexOf("application/json") !== -1) {
           return response.json().then(function(json) {
-            app.products = [];
+            app.products = {};
             for(let food in json.foods){
-              app.products.push( Object.assign( new app.Product(), json.foods[food]) );
+              app.products[food] = Object.assign( new app.Product(), json.foods[food]);
             }
           });
         } else {
@@ -22,5 +22,11 @@ app.Product = class {
       });
   }
 
+  draw(div) {
+    let img = document.createElement("img");
+    img.src = 'img/icons/'+this.icon;
+    img.alt = this.displayName;
+    div.appendChild(img);
+  }
 
 };
