@@ -1,6 +1,6 @@
 var app = app || {};
 
-app.states = ['welcome', 'monster', 'shop', 'fridge', 'score'];
+app.states = ['welcome', 'monster', 'shop', 'tips', 'fridge', 'score'];
 
 app.State = class {
   constructor() {
