@@ -13,6 +13,11 @@ app.Game = class {
     this.max_protein = 200;
     this.max_fat = 200;
     this.max_carbohydrates = 200;
+
+    this.actual_kcal = 0;
+    this.actual_protein = 0;
+    this.actual_fat = 0;
+    this.actual_carbohydrates = 0;
   }
 
   rand(min, max){

@@ -15,7 +15,17 @@ app.Fridge = class {
   }
 
   eatProduct(productName) {
-    console.log("om nom nom");
+    app.game.actual_kcal += app.products[productName].kcal;
+    app.game.actual_protein += app.products[productName].protein;
+    app.game.actual_fat += app.products[productName].fat;
+    app.game.actual_carbohydrates += app.products[productName].carbohydrates;
+
+    app.bars[0].kcal = app.game.actual_kcal;
+    app.bars[0].protein = app.game.actual_protein;
+    app.bars[0].fat = app.game.actual_fat;
+    app.bars[0].carbohydrates = app.game.actual_carbohydrates;
+
+    app.bars[0].refresh();
   }
 
   draw(container) {
