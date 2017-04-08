@@ -3,7 +3,6 @@ var app = app || {};
 app.Product = class {
   constructor() {
 
-    //this.name = {};
   }
 
   static load(url){
@@ -14,9 +13,6 @@ app.Product = class {
           return response.json().then(function(json) {
             app.products = [];
             for(let food in json.foods){
-
-              //let product = new app.Product();
-
               app.products.push( Object.assign( new app.Product(), json.foods[food]) );
             }
           });
