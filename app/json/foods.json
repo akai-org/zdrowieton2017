@@ -378,8 +378,8 @@
       "carbohydrates": 11.35,
       "serving": "244g",
       "icon": "milk.svg",
-      "dbLink": "Krowa daje mleko.",
-      "hint": "https://ndb.nal.usda.gov/ndb/foods/show/71?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=milk&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "dbLink": "https://ndb.nal.usda.gov/ndb/foods/show/71?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=milk&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing=",
+      "hint": "Krowa daje mleko. MUUUUU",
       "process": {}
     },
     "yoghurt": {
