@@ -17,15 +17,18 @@ app.Bar = class {
     bar.style.height=(100-(100*a/max)).toString()+'%';
   }
 
-  refresh() {
+  refresh(b) {
     this.refbar(this.bars[0].getElementsByClassName('blank')[0],this.kcal,app.game.max_kcal);
     this.bars[1].getElementsByClassName('blank')[0].style.height=(100-(100*this.protein/app.game.max_protein)).toString()+'%';
     this.bars[2].getElementsByClassName('blank')[0].style.height=(100-(100*this.fat/app.game.max_fat)).toString()+'%';
     this.bars[3].getElementsByClassName('blank')[0].style.height=(100-(100*this.carbohydrates/app.game.max_carbohydrates)).toString()+'%';
-    this.bars[0].getElementsByClassName('limit')[0].style.top=(100-(100*this.kcal/app.game.kcal_limit)).toString()+'%';
-    this.bars[1].getElementsByClassName('limit')[0].style.top=(100-(100*this.protein/app.game.protein_limit)).toString()+'%';
-    this.bars[2].getElementsByClassName('limit')[0].style.top=(100-(100*this.fat/app.game.fat_limit)).toString()+'%';
-    this.bars[3].getElementsByClassName('limit')[0].style.top=(100-(100*this.carbohydrates/app.game.carbohydrates_limit)).toString()+'%';
+    if(b){
+      this.bars[0].getElementsByClassName('limit')[0].style.top=(100-(100*this.kcal_limit/app.game.max_kcal)).toString()+'%';
+      this.bars[1].getElementsByClassName('limit')[0].style.top=(100-(100*this.protein_limit/app.game.max_protein)).toString()+'%';
+      this.bars[2].getElementsByClassName('limit')[0].style.top=(100-(100*this.fat_limit/app.game.max_fat)).toString()+'%';
+      this.bars[3].getElementsByClassName('limit')[0].style.top=(100-(100*this.carbohydrates_limit/app.game.max_carbohydrates)).toString()+'%';
+    }
+
   }
 
   static init() {

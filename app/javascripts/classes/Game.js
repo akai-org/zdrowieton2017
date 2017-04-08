@@ -36,17 +36,18 @@ app.Game = class {
     app.bars[0].fat = this.fat;
     app.bars[0].carbohydrates = this.carbohydrates;
 
-    app.bars[0].kcal_limit = app.bars[0].kcal;
-    app.bars[0].protein_limit = app.bars[0].protein;
-    app.bars[0].fat_limit = app.bars[0].fat;
-    app.bars[0].carbohydrates_limit = app.bars[0].carbohydrates;
+    app.bars[0].kcal_limit = this.kcal;
+    app.bars[0].protein_limit = this.protein;
+    app.bars[0].fat_limit = this.fat;
+    app.bars[0].carbohydrates_limit = this.carbohydrates;
 
-    app.bars[1].kcal_limit = app.bars[1].kcal;
-    app.bars[1].protein_limit = app.bars[1].protein;
-    app.bars[1].fat_limit = app.bars[1].fat;
-    app.bars[1].carbohydrates_limit = app.bars[1].carbohydrates;
+    app.bars[1].kcal_limit = this.kcal;
+    app.bars[1].protein_limit = this.protein;
+    app.bars[1].fat_limit = this.fat;
+    app.bars[1].carbohydrates_limit = this.carbohydrates;
 
-    app.bars[0].refresh();
+    app.bars[0].refresh(true);
+    app.bars[1].refresh(true);
   }
 
 
