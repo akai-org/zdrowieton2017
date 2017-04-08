@@ -32,6 +32,7 @@ app.Fridge = class {
       let product = app.products[productName];
       let div = document.createElement("div");
       div.className = "fridge--content--item";
+      div['data-title'] = 'tooltip text';
       product.draw(div);
       div.addEventListener("click", function() {
         fridge.eatProduct(productName);
