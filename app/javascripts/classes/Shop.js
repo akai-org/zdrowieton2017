@@ -38,6 +38,10 @@ app.Shop = class {
   }
 
   checkout() {
+    var items = Object.keys(this.cart);
+    var randomName = items[Math.floor(Math.random()*items.length)];
+    document.getElementById('best-tip-ever').innerHTML = app.products[randomName].hint;
+
     for (let prod in this.cart) {
       let n = this.cart[prod];
       console.log('put some ', prod, ' to the fridge n=', n);

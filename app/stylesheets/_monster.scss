@@ -1,6 +1,7 @@
 .monster{
   height: 100vh;
   display: flex;
+  position: relative;
 
   &--right {
     flex: 2 0 0;
@@ -17,14 +18,23 @@
   }
 
   &--message{
+    margin-top: 150px;
+
+    &--content {
+      width: 300px;
+    }
   }
 
-  a{
-    margin-top:150px;
-    text-decoration: none;
-    padding: 10px;
-    border-radius:10%;
-    background-color: $red;
-    color: white;
+  &--button {
+    top: 320px;
+  }
+
+  .button {
+    width:100px;
+    height:400px;
+  }
+
+  .needs {
+    margin-bottom: 275px;
   }
 }

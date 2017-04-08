@@ -6,6 +6,8 @@ background: -webkit-linear-gradient(right, $red, $darkred);
 background: -moz-linear-gradient(right, $red, $darkred);
 background: -o-linear-gradient(right, $red, $darkred);
 background: linear-gradient(to left, $red, $darkred);
+  background: url('../images/bg.jpg') 50% 50%;
+  background-size: cover;
   padding:0 20%;
 color: $light;
   h1{
@@ -19,7 +21,7 @@ color: $light;
     background-color:$light;
     padding: 20px;
     color: $red;
-    border-radius:10%;
+    border-radius:10px;
     margin-left:450px;
     margin-top: 50px;
     font-size:20px;
