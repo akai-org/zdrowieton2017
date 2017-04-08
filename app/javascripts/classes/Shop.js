@@ -32,7 +32,15 @@ app.Shop = class {
   }
 
   checkout() {
-    // put the products into the fridge
+    for (let prod in this.cart) {
+      let n = this.cart[prod];
+      console.log('put some ', prod, ' to the fridge n=', n);
+      while (n--) {
+        app.fridge.insertProduct(prod);
+
+      }
+    }
+    app.fridge.draw(document.getElementById("fridge"));
   }
 
   draw(container) {
@@ -63,6 +71,8 @@ app.Shop = class {
         shelf = null;
       }
     }
-    if (shelf) well.appendChild(shelf);
+    document.querySelector("#shop .start").addEventListener("click", function() {
+      shop.checkout();
+    });
   }
 };
