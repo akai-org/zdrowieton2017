@@ -9,6 +9,7 @@ app.Shop = class {
     this.products = [];
     this.cart = [];
     this.limit = limit;
+    this.shelfSize = 5;
   }
 
   loadRandomProducts(set, number) {
@@ -35,17 +36,31 @@ app.Shop = class {
 
   draw(container) {
     let well = container.getElementsByClassName("well")[0];
-    console.log(this.products);
-    this.products.forEach(function(productName) {
+    well.innerHTML = '';
+    let shop = this;
+    let shelf, j;
+    for (let i=0; i<this.products.length; i++) {
+      if (!shelf) {
+        console.log('new shelf!!!');
+        shelf = document.createElement("div");
+        shelf.className = "shelf";
+        j = 0;
+      }
+      let productName = this.products[i];
       let div = document.createElement("div");
       div.className = "item";
       let product = app.products[productName];
-      console.log(productName, product);
       product.draw(div);
       div.addEventListener("click", function() {
-        console.log("An item has been clicked!", product);
+        shop.buyProduct(productName);
+        console.log(shop.cart);
       });
-      well.appendChild(div);
-    });
+      shelf.appendChild(div);
+      if (++j >= this.shelfSize) {
+        well.appendChild(shelf);
+        shelf = null;
+      }
+    }
+    if (shelf) well.appendChild(shelf);
   }
 };
