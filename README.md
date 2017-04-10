@@ -18,7 +18,7 @@ Make the users aware of how much of kilocalories, fat, protein and carbohydrates
 
 ## Made by
 - Rafał Rudol - [@rrudol](https://github.com/rrudol)
-- Mikołaj Rozwadowski [@hejmsdz](https://github.com/hejmsdz)
+- Mikołaj Rozwadowski - [@hejmsdz](https://github.com/hejmsdz)
 - Tomasz Gil - [@tomaszgil](https://github.com/tomaszgil)
 - Tomasz Jeznach - [@futer](https://github.com/futer)
 - Marta Sitkowska - [@seohhe](https://github.com/seohhe)
