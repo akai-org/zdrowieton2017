@@ -33,6 +33,12 @@
     color: white;
   }
 
+  @media (max-width: 600px) {
+    .orange {
+      display: none;
+    }
+  }
+
   a {
     background-color:$light;
     padding: 15px 30px;
