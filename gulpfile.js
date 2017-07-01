@@ -7,7 +7,7 @@ var sourcemaps  = require('gulp-sourcemaps');
 var fileinclude = require('gulp-file-include');
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['html', 'images', 'sass', 'babel', 'json'], function() {
+gulp.task('serve', ['build'], function() {
 
   browserSync.init({
     server: "./public"
@@ -19,6 +19,8 @@ gulp.task('serve', ['html', 'images', 'sass', 'babel', 'json'], function() {
   gulp.watch("app/*.html", ['html']);
   gulp.watch("public/*.html").on('change', browserSync.reload);
 });
+
+gulp.task('build', ['html', 'images', 'sass', 'babel', 'json']);
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
