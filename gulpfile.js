@@ -20,7 +20,7 @@ gulp.task('serve', ['build'], function() {
   gulp.watch("public/*.html").on('change', browserSync.reload);
 });
 
-gulp.task('build', ['html', 'images', 'sass', 'babel', 'json']);
+gulp.task('build', ['html', 'images', 'sass', 'babel', 'json', 'sounds']);
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
@@ -55,6 +55,11 @@ gulp.task('html', function() {
 gulp.task('json', function() {
   return gulp.src("app/json/*.json")
     .pipe(gulp.dest("public/json/"));
+});
+
+gulp.task('sounds', function() {
+  return gulp.src("app/sounds/*")
+    .pipe(gulp.dest("public/sounds/"));
 });
 
 gulp.task('images', function() {

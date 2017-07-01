@@ -51,3 +51,9 @@ a{
   background-color: $red;
   color: white;
 }
+
+[id=media-player] {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
