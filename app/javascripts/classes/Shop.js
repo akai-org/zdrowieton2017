@@ -56,6 +56,8 @@ app.Shop = class {
   }
 
   draw(container) {
+    this.shelfSize = Math.min(window.innerWidth, 260*5) / 260;
+    
     let well = container.getElementsByClassName("well")[0];
     well.innerHTML = '';
     container.getElementsByClassName("projRemaining")[0].innerHTML = this.inCart + '/' + this.limit;
