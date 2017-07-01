@@ -17,7 +17,6 @@ app.State = class {
     target = target.replace('#', '');
     if(target == 'monster') {
       app.game.random();
-      document.getElementById("media-player").play();
     }
     //if( (target) && (0 === target.length) ) return;
     for(let i in app.states) {

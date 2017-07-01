@@ -1,29 +1,42 @@
-.welcome{
-  margin-top:-72px;
-  height:100vh;
-background: $red; /* fallback for old browsers */
-background: -webkit-linear-gradient(right, $red, $darkred);
-background: -moz-linear-gradient(right, $red, $darkred);
-background: -o-linear-gradient(right, $red, $darkred);
-background: linear-gradient(to left, $red, $darkred);
+.welcome {
+  min-height:100vh;
+  background: $red; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, $red, $darkred);
+  background: -moz-linear-gradient(right, $red, $darkred);
+  background: -o-linear-gradient(right, $red, $darkred);
+  background: linear-gradient(to left, $red, $darkred);
   background: url('../images/bg.jpg') 50% 50%;
   background-size: cover;
-  padding:0 20%;
-color: $light;
-  h1{
-    padding-top:200px;
+  padding: 0 10%;
+  color: $light;
+  display: flex;
+  align-items: center;
+  
+  h1 {
+    margin: 0;
     font-size:85px;
   }
-  p{
-    width:45%;
+  
+  p {
+    max-width:500px;
+    line-height: 1.6em;
   }
-  a{
-    background-color:$light;
-    padding: 20px;
-    color: $red;
-    border-radius:10px;
-    margin-left:450px;
+
+  .button {
     margin-top: 50px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .orange a {
+    background: darkorange;
+    color: white;
+  }
+
+  a {
+    background-color:$light;
+    padding: 15px 30px;
+    color: $red;
     font-size:20px;
   }
 
