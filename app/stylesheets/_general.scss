@@ -44,8 +44,13 @@ section{
   height:100vh;
 
 }
-a{
+
+a {
   text-decoration: none;
+  color: orange;
+}
+
+.button a {
   padding: 10px;
   border-radius:10px;
   background-color: $red;
@@ -57,6 +62,9 @@ a{
   bottom: 0;
   left: 0;
   color: silver;
+  margin: 10px 20px;
+  font-size: 12px;
+  font-weight: 300px;
 }
 
 [id=media-player] {
