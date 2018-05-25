@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1">
+  <title>Zdrowieton 2017 - Nazwa została zjedzona - AKAI</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <section id="welcome">
+  <div class="welcome">
+    <div class="container">
+      <h1>Witaj!</h1>
+      <p>Przed Tobą gra "Nazwa została zjedzona". Przez kogo? Dobre pytanie! Przez tajemnicze stworki z niezwykłym apetytem. Czy będziesz w stanie zaspokoić ich żołądki? Przekonaj się sam!</p>
+      <div>
+        <div class="button orange">
+          <a class="start" href="#monster" onclick='document.getElementById("media-player").play();' alt="">Rozpocznij grę z muzyką</a>
+        </div>
+        <div class="button">
+          <a class="start" href="#monster" alt="">Rozpocznij grę</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="monster">
+  <div class="monster">
+    <div class="monster--left">
+      <img src="images/stworek.png" alt="Monster" class="monster--img">
+    </div>
+    <div class="monster--right">
+      <div class="monster--message">
+        <h3>Witaj!</h3>
+        <p class="monster--message--content">Jestem Stworek, nakarm mnieee!</p>
+        <p class="monster--message--content">Poniżej widzisz moje potrzeby:</p>
+      </div>
+      <div class="needs">
+          <div class="kcal">
+            <div class="title">Kalorie</div>
+            <div class="blank"></div>
+            <div class="limit"></div>
+          </div>
+          <div class="protein">
+            <div class="title">Białka</div>
+            <div class="blank"></div>
+            <div class="limit"></div>
+          </div>
+          <div class="fat">
+            <div class="title">Tłuszcze</div>
+            <div class="blank"></div>
+            <div class="limit"></div>
+          </div>
+          <div class="carbohydrates">
+            <div class="title">Węglowodany</div>
+            <div class="blank"></div>
+            <div class="limit"></div>
+          </div>
+      </div>
+      <div class="button">
+        <a class="start monster--button" href="#shop" alt="">Dalej</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="shop">
+  <div class="shop">
+  <header class="shop-header">
+    <h1>SKLEP - Na bogato 💵</h1>
+  </header>
+  <div class="timer">
+    <img id="timer" src="images/clock.PNG">
+  </div>
+<div class="well">
+</div>
+
+  <code class="cart"></code><br>
+  
+  <div class="button nextStep">
+  	  <a class="start" href="#tips" alt="">Przejdź dalej 🙂</a>
+  </div>
+
+  <div class="circleScore">
+    <span class="projRemaining">5/10</span>
+  </div>
+  </div>
+</section>
+  <section id="tips">
+  <div class="tips">
+    <div class="container">
+      <p id="best-tip-ever">Marchewki są taaaakie zdrowe!</p>
+      <div class="button">
+          <a class="start" href="#fridge" alt="">Graj dalej :)</a>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="fridge">
+  <div class="fridge">
+    <div class="fridge--content">
+      <div class="fridge--content--wrapper">
+      </div>
+    </div>
+    <div class="fridge--stats">
+      <h3>Aktualne spożycie</h3>
+      <div class="needs">
+          <div class="kcal">
+            <div class="blank"></div>
+            <div class="limit"></div>
+          </div>
+          <div class="protein">
+            <div class="blank"></div>
+            <div class="limit"></div>
+          </div>
+          <div class="fat">
+            <div class="blank"></div>
+            <div class="limit"></div>
+          </div>
+          <div class="carbohydrates">
+            <div class="blank"></div>
+            <div class="limit"></div>
+          </div>  
+      </div>
+
+      <div class="Legenda">
+        <h3>Legenda: </h3>
+        Max Kcal: <span class="valueKcal"> </span><br/>
+        Max Protein: <span class="valueProtein"> </span><br/>
+        Max Fat: <span class="valueFat"> </span><br/>
+        Max Carbo: <span class="valueCarbo"> </span><br/>
+      </div>
+
+      <div>
+        <a href="#score" class="fridge--stats--button">Zakończ rundę</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="score">
+  <div class="score">
+    <h1>Twój wynik to:</h1>
+    <h2></h2>
+    <h3>łącznie punktów: <span id="total"></span></h3>
+
+    <img src="images/icons/pan.svg" alt="Pan">
+    <img src="images/icons/pot.svg" alt="Pot">
+    <a class="start" href="#monster" alt="">Graj ponownie</a>  
+  </div>
+</section>
+
+
+  <footer class="credits">
+    Made by <a href="//akai.org.pl">AKAI</a> & <a href="https://github.com/futer">Tomek</a> with 💛 &nbsp|| background music from <a href="http://www.bensound.com/royalty-free-music">bensound.com</a>
+  </footer>
+
+  <audio id="media-player" controls loop>
+    <source src="sounds/bensound-cute.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <script src="js/all.js"></script>
+</body>
+</html>
